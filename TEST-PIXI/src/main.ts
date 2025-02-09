@@ -10,4 +10,8 @@ import { Application, Assets, Sprite } from "pixi.js";
   app.stage.on("pointermove", (event) => {
     sprite.x = event.data.global.x;
   });
+  app.stage.on("pointerdown", (event) => {
+    sprite.x = event. .global.x;
+    sprite.y = event.data.global.y;
+  });
 })();
